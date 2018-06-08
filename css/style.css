@@ -1,0 +1,76 @@
+body, footer {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    align-self: flex-end;
+    object-fit: contain;
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    max-height: calc(100vh - 5.51563em);
+    animation: make-an-entrance .5s cubic-bezier(0.0, 0.0, 0.2, 1) .125s both;
+}
+
+footer {
+    align-self: flex-start;
+    width: 100%;
+    margin: 1em;
+    flex: 0 0 auto;
+    line-height: 1.25;
+}
+
+footer span {
+    display: block;
+    font-family: "Open Sans", "Segoe UI", "San Francisco", Tahoma, sans-serif;
+    font-size: .688em;
+    text-align: center;
+    animation: slide-up .5s cubic-bezier(0.4, 0.0, 0.2, 1) both;
+}
+
+footer span:nth-child(1) {
+    animation-delay: .5s;
+    transform: translateY(300%);
+}
+
+footer span:nth-child(2) {
+    animation-delay: .75s;
+    transform: translateY(325%);
+}
+
+footer span:nth-child(3) {
+    animation-delay: 1s;
+    transform: translateY(350%);
+}
+
+@keyframes make-an-entrance {
+    from {
+        opacity: .1;
+        transform: scale(.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
