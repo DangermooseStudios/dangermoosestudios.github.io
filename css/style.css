@@ -4,6 +4,7 @@ body, footer {
 
 html {
     display: flex;
+    overflow: hidden;
     height: 100%;
 }
 
@@ -11,10 +12,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    overflow: hidden;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    overscroll-behavior-y: none;
 }
 
 main {
