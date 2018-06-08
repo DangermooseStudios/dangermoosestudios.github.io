@@ -7,20 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dangermoose Studios</title>
         <style>
-            body, .logo, footer {
+            body, footer {
                 box-sizing: border-box;
             }
 
             body {
                 margin: 0;
                 padding: 0;
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-areas: "content" "footer";
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
             }
 
             main {
-                grid-area: content;
+                align-self: flex-end;
                 object-fit: contain;
                 text-align: center;
             }
@@ -31,7 +32,7 @@
             }
 
             footer {
-                grid-area: footer;
+                align-self: flex-start;
                 width: 100%;
                 padding: .5em;
                 flex: 0 0 auto;
