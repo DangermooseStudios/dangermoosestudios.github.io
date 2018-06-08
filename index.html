@@ -4,6 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dangermoose Studios</title>
         <style>
             body, .logo, footer {
@@ -12,7 +13,7 @@
 
             body {
                 margin: 0;
-                padding: 1em;
+                padding: 0;
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-areas: "content" "footer";
@@ -25,6 +26,7 @@
             }
 
             main img {
+                max-width: 100%;
                 max-height: calc(100vh - 5.51563em);
             }
 
