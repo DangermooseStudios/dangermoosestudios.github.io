@@ -2,6 +2,11 @@ body, footer {
     box-sizing: border-box;
 }
 
+html {
+    display: flex;
+    height: 100%;
+}
+
 body {
     height: 100vh;
     margin: 0;
